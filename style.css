@@ -9,7 +9,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-padding-left: 0;}
+    padding-left: 0
+;}
 body :first-child{
     display: flex;
     justify-content: center;
@@ -32,5 +33,55 @@ body h1{
 body div.after-time{
     display: flex;
     justify-content: center;
-    height:20vh;
+    height:10vh;
+}
+body section {
+    width: 90vw;
+    height: 90vh;
+    max-width: 100vw;
+    margin: 0 auto; /* Center the section */
+}
+
+.hero {
+    width: 100%;
+    height:auto; 
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero > div {
+    flex: 1; 
+    height: auto;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .pic{
+    border-radius: 50%;
+    overflow: hidden;
+    border-left: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
+    border-right: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
+    box-shadow:
+        0 0 20px 5px rgb(255, 255, 255),  /* glowing aura */
+        0 0 30px 10px rgba(255, 100, 0, 0.3);   /* painterly color effect */
+    margin-right: 100px;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 100%; 
+    height: 100%;
+    aspect-ratio: 1/1;
+
+}
+.hero .hero-text{
+    font-size: 2rem;
+    color:white;
+    margin-left: 100px;
 }
