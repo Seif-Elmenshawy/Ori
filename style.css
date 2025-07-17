@@ -80,6 +80,7 @@ body{
 .hero .hero-text{
     font-size: 2rem;
     color:white;
+    font-family: "segoe ui light", sans-serif;
     margin-left: 100px;
 }
 .nav-bar{
