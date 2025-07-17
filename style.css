@@ -9,43 +9,41 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-left: 0
-;}
-body :first-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    transition: height 1s ease-in-out;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1200;
 }
-body h1{
+.welcome{
     color: white;
     text-align: center;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    width: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: height 1s ease-in-out;
+    margin-bottom:100px;
+
 }
 
-@keyframes typing{
-    from { width: 0; }
-    to { width: 7ch; }
-}
-body div.after-time{
+.welcome.after-time{
     display: flex;
     justify-content: center;
     height:10vh;
 }
-body section {
+.part-one {
     width: 90vw;
     height: 90vh;
     max-width: 100vw;
-    margin: 0 auto; /* Center the section */
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .hero {
     width: 100%;
-    height:auto; 
-    aspect-ratio: 1/1;
+    height:400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +62,6 @@ body section {
 }
 .hero .pic{
     border-radius: 50%;
-    overflow: hidden;
     border-left: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
     border-right: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
     box-shadow:
@@ -84,4 +81,27 @@ body section {
     font-size: 2rem;
     color:white;
     margin-left: 100px;
+}
+.nav-bar{
+    margin: auto;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border:3px solid white;
+    border-radius: 10px;
+    height: 60px;
+}
+.nav-item{
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border:2px solid transparent;
+    padding:5px 10px;
+    border-radius:7px;
+}
+.nav-item:hover{
+    color: white;
+    transition: color 0.3s ease-in-out;
+    border: white 2px solid;
 }
