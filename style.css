@@ -101,6 +101,7 @@ body{
     border:2px solid transparent;
     padding:5px 10px;
     border-radius:7px;
+    background-color: transparent;
 }
 .nav-item:hover{
     color: white;
@@ -130,20 +131,97 @@ body{
     border: 2px solid white;
     border-radius: 9px;
     padding: 10px 20px;
-    width: 50%;
+    width: 30%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container span{
-    font-size: 1.3rem;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    padding: 5px 10px;
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
-.container span:hover{
-    border: 2px solid white;
-    transition: border 0.3s ease-in-out;
+.hobbies-sect{
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.fav-game{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+.games{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.games-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fav-game img{
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.hobbies-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.book-sect{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#skills.active{
+    color: black;
+    background-color: white;
+    padding:5px 10px;
+    border-radius:7px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border:2px solid transparent;   
+}
+#hobbies.nav-item{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border:2px solid transparent;
+    padding:5px 10px;
+    border-radius:7px;
+    background-color: transparent;
 }

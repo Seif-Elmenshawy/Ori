@@ -20,7 +20,6 @@
         </section>
         <div class="nav-bar">
             <span class="active" id="aboutme">About me</span>
-            <span class="nav-item" id="skills">Skills</span>
             <span class="nav-item" id="projects">Projetcs</span>
             <span class="nav-item" id="contact">Contact</span>
         </div>
@@ -29,33 +28,53 @@
                 <h2>About me</h2>
                 <p>I am a high scholar passionate in front end development, machine learning, and data science</p>
                 <div class="container">
-                    <span>Hobbies</span>
-                    <span>Skills & Tools</span>
-                    <span>My goals</span>
+                    <span class="active" id="hobbies" onclick="hobbyNav()">Hobbies</span>
+                    <span class="nav-item" id="skills" onclick="skillsNav()">Skills & Tools</span>
                 </div>
-                <div class="hobbies">
+                <div class="hobbies" id="hobbies-section">
                     <h3>Hobbies</h3>
                     <p>I have many hobbies i love to like playing games, reading some books, and build a website as a practice</p>
-                    <div>
-                        <h4>My favourite games</h4>
-                        <p>Mainly, i love indie games and story based games</p>
-                        <div class="games">
-                            <img src="icon.png" alt="game icon">
-                            <p>Ori and the will of the wisps, the best game I have ever played and I loved it so much</p>
+                    <div class="hobbies-sect">
+                        <div class="fav-game">
+                            <h3>My favourite games</h3>
+                            <p>Mainly, i love indie games and story based games</p>
+                            <div class="games-cont">
+                                <div class="games">
+                                    <img src="icon.png" alt="game icon">
+                                    <p>Ori and the will of the wisps, the best game I have ever played and I loved it so much</p>
+                                </div>
+                                <div class="games">
+                                    <img src="hollow.jpeg" alt="hollow knight icon">
+                                    <p>Hollow Knight, the first indie game I played and it was so good</p>
+                                </div>
+                                <div class="games">
+                                    <img src="batman.png" alt="arkham knight icon">
+                                    <p>Batman Arkham Knight, a story based game i enjoyed it so much</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="games">
-                            <img src="hollow.jpeg" alt="hollow knight icon">
-                            <p>Hollow Knight, the first indie game I played and it was so good</p>
-                        </div>
-                        <div>
-                            <img src="batman.png" alt="arkham knight icon">
-                            <p>Batman Arkham Knight, a story based game i enjoyed it so much</p>
+                        <div class="book-sect">
+                            <h3>My favourite books</h3>
+                            <p>I love reading psychology related books. I don't know why but I love psychology</p>
+                            <div class="book-cont">
+                                <div class="book">
+                                    <img src="influence.png" alt="influence">
+                                    <p>Influence: The Psychology of Persuasion, the first book I read in psychology and I love it, it explains how to influence people and how to be influenced</p>
+                                </div>
+                                <div class="book">
+                                    <img src="image.png" alt="Love 2.0">
+                                    <p>Love 2.0, I love this book as it explains how do people feel love and it explains it in biochemistry too</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div></div>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="skills" id="skills-section">
+                    <h3>Skills & tools</h3>
+                    <p>I have many skills and i work in many fields of programming like frontend development, machine learning, data science, and graphic designer.</p>
+                    <div class="skill-part"></div>
+                    <div class="skill-part"></div>
+                </div>
             </div>
         </section>
     </main>
