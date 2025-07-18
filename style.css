@@ -229,3 +229,40 @@ body{
     border-radius:7px;
     background-color: transparent;
 }
+.skill-part{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+    gap: 75px;
+}
+.skills h3{
+    margin: 40px 0 ;
+}
+.skill-part img{
+    width: 200px;
+    height:auto;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+footer p{
+    color: lightgray;
+    font-family:"gameFont", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+footer a{
+    color: lightgray;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer{
+    border: 2px solid white;
+    border-radius: 25px 25px 0 0 ;
+    color: white;
+    font-family: "gameFont", sans-serif;
+}
