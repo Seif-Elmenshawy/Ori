@@ -12,7 +12,7 @@ body{
     box-sizing: border-box;
     margin: auto;
     max-width: 1200;
-    cursor: url(ori.png), auto;
+    cursor: url(Ori-pointer.png), auto;
 }
 .welcome{
     color: white;
@@ -101,7 +101,7 @@ body{
 .nav-item{
     color: white;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: url(Ori-link.png), auto;
     border:2px solid transparent;
     padding:5px 10px;
     border-radius:7px;
@@ -117,19 +117,26 @@ body{
     background-color: white;
     padding:5px 10px;
     border-radius:7px;
-    cursor: pointer;
+    cursor: url(Ori-link.png), auto ;
     font-size: 1.5rem;
     border:2px solid transparent;
 }
-.about{
+.part-two{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
 }
-.about p{
+.part-two p{
     font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;   
 }
 .container{
     border: 2px solid white;
@@ -216,14 +223,14 @@ body{
     background-color: white;
     padding:5px 10px;
     border-radius:7px;
-    cursor: pointer;
+    cursor: url(Ori-link.png), auto ;
     font-size: 1.5rem;
     border:2px solid transparent;   
 }
 #hobbies.nav-item{
     color: white;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: url(Ori-link.png), auto ;
     border:2px solid transparent;
     padding:5px 10px;
     border-radius:7px;
@@ -265,4 +272,49 @@ footer{
     border-radius: 25px 25px 0 0 ;
     color: white;
     font-family: "gameFont", sans-serif;
+}
+#project{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#project p{
+    font-family: "segeo ui light", sans-serif;
+}
+.project-item{
+    width: 45%;
+    flex: 1;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 2.5%;
+    padding: 15px;
+}
+.project-item img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+}
+.project-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 0;
+}
+.project-item a{
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    cursor:  url(Ori-link.png), auto;
 }
