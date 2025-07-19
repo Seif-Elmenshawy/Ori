@@ -266,6 +266,7 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
+    cursor: url(Ori-link.png), auto ;
 }
 footer{
     border: 2px solid white;
