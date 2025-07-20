@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="Main Theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h1 id="welcome" class="welcome">welcome</h1>
+    <main id="hero">
+        <section class="part-one">
+            <div class="hero">
+                <div class="pic"><img src="my pic.jpg" alt="me"></div>
+                <div class="hero-text">
+                    <p>Hi! My name is Seif.<br> An Egyptian high scholar interested in Web Development, Data science, and Machine learning.</p>
+                </div>
+            </div>
+        </section>
+        <div class="nav-bar">
+            <span class="active" id="aboutme" onclick="aboutNav()">About me</span>
+            <span class="nav-item" id="projects" onclick="projectsNav()">Projetcs</span>
+        </div>
+        <section class="part-two" id="about">
+            <div class="about">
+                <h2>About me</h2>
+                <p>I am a high scholar passionate in front end development, machine learning, and data science</p>
+                <div class="container">
+                    <span class="active" id="hobbies" onclick="hobbyNav()">Hobbies</span>
+                    <span class="nav-item" id="skills" onclick="skillsNav()">Skills & Tools</span>
+                </div>
+                <div class="hobbies" id="hobbies-section">
+                    <h3>Hobbies</h3>
+                    <p>I have many hobbies i love to like playing games, reading some books, and build a website as a practice</p>
+                    <div class="hobbies-sect">
+                        <div class="fav-game">
+                            <h3>My favourite games</h3>
+                            <p>Mainly, i love indie games and story based games</p>
+                            <div class="games-cont">
+                                <div class="games">
+                                    <img src="icon.png" alt="game icon">
+                                    <p>Ori and the will of the wisps, the best game I have ever played and I loved it so much</p>
+                                </div>
+                                <div class="games">
+                                    <img src="hollow.jpeg" alt="hollow knight icon">
+                                    <p>Hollow Knight, the first indie game I played and it was so good</p>
+                                </div>
+                                <div class="games">
+                                    <img src="batman.png" alt="arkham knight icon">
+                                    <p>Batman Arkham Knight, a story based game i enjoyed it so much</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-sect">
+                            <h3>My favourite books</h3>
+                            <p>I love reading psychology related books. I don't know why but I love psychology</p>
+                            <div class="book-cont">
+                                <div class="book">
+                                    <img src="influence.png" alt="influence">
+                                    <p>Influence: The Psychology of Persuasion, the first book I read in psychology and I love it, it explains how to influence people and how to be influenced</p>
+                                </div>
+                                <div class="book">
+                                    <img src="image.png" alt="Love 2.0">
+                                    <p>Love 2.0, I love this book as it explains how do people feel love and it explains it in biochemistry too</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills" id="skills-section">
+                    <h2>Skills & tools</h2>
+                    <p>I have many skills and i work in many fields of programming like frontend development, machine learning, data science, and graphic designer.</p>
+                    <h3>Skills</h3>
+                    <div class="skill-part">
+                        <img src="html.png" alt="HTML">
+                        <img src="css.png" alt="css">
+                        <img src="js.png" alt="JS">
+                        <img src="python.png" alt="Python">
+                        <img src="pandas.svg" alt="Pandas">
+                        <img src="numpy.svg" alt="Numpy">
+                        <img src="textual.svg" alt="Textual">
+                        <img src="socket.svg" alt="Socket.io">
+                        <img src="git.png" alt="git">
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="skill-part">
+                        
+                        <img src="vs.png" alt="vs code"><img src="canva.svg" alt="Canva">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="part-three" id="project">
+            <h2>Projects</h2>
+            <p>I worked on some projects which are mentioned below</p>
+            <div class="project-item-container">
+                <div class="project-item">
+                    <img src="Screenshot 2025-06-21 022559.png" alt="Data Analyzer">
+                    <h3>Data Analyzer</h3>
+                    <p>A terminal tool uses python and pandas to analyze data, and textual to make the TUI of the tool</p>
+                </div>
+                <div class="project-item">
+                    <img src="notes.jpg" alt="Notes & Games">
+                    <h3>Notes & Games</h3>
+                    <p>A website made for taking notes and playing some games</p>
+                    <a href="https://seif-elmenshawy.github.io/Notes-Games/">Demo</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Made with love by Seif Ahmed</p>
+            <p>For More question you can contact me on <a href="https://hackclub.slack.com/team/U091ME8PMQS">Slack</a>, <a href="mailto:seif.ahmed.3849@gmail.com">Mail</a>. You can see my other project on <a href="https://github.com/Seif-Elmenshawy">Github</a></p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

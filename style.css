@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "gameFont";
+    src: url(Orifont-Regular.ttf);
+}
+
+body{
+    font-family: "gameFont", sans-serif;
+    background: linear-gradient(to bottom,#292A7C, #773EC8, #BC6ECA);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1200;
+    cursor: url(Ori-pointer.png), auto;
+}
+.welcome{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: height 1s ease-in-out;
+    margin-bottom:100px;
+
+}
+
+.welcome.after-time{
+    display: flex;
+    justify-content: center;
+    height:10vh;
+}
+.part-one {
+    width: 90vw;
+    height: 90vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#hero{
+    display: none;;
+}
+
+.hero {
+    width: 100%;
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero > div {
+    flex: 1; 
+    height: auto;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .pic{
+    border-radius: 50%;
+    border-left: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
+    border-right: 6px solid rgba(255, 255, 255, 0.5); /* soft outer border */
+    box-shadow:
+        0 0 20px 5px rgb(255, 255, 255),  /* glowing aura */
+        0 0 30px 10px rgba(255, 100, 0, 0.3);   /* painterly color effect */
+    margin-right: 100px;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 100%; 
+    height: 100%;
+    aspect-ratio: 1/1;
+
+}
+.hero .hero-text{
+    font-size: 2rem;
+    color:white;
+    font-family: "segoe ui light", sans-serif;
+    margin-left: 100px;
+}
+.nav-bar{
+    margin: auto;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border:3px solid white;
+    border-radius: 10px;
+    height: 60px;
+    margin-bottom: 50px;
+}
+.nav-item{
+    color: white;
+    font-size: 1.5rem;
+    cursor: url(Ori-link.png), auto;
+    border:2px solid transparent;
+    padding:5px 10px;
+    border-radius:7px;
+    background-color: transparent;
+}
+.nav-item:hover{
+    color: white;
+    border: white 2px solid;
+    transition: border 0.3s ease-in-out;
+}
+.active{
+    color: black;
+    background-color: white;
+    padding:5px 10px;
+    border-radius:7px;
+    cursor: url(Ori-link.png), auto ;
+    font-size: 1.5rem;
+    border:2px solid transparent;
+}
+.part-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.part-two p{
+    font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;   
+}
+.container{
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 10px 20px;
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.hobbies-sect{
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.fav-game{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+.games{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.games-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fav-game img{
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.hobbies-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.book-sect{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#skills.active{
+    color: black;
+    background-color: white;
+    padding:5px 10px;
+    border-radius:7px;
+    cursor: url(Ori-link.png), auto ;
+    font-size: 1.5rem;
+    border:2px solid transparent;   
+}
+#hobbies.nav-item{
+    color: white;
+    font-size: 1.5rem;
+    cursor: url(Ori-link.png), auto ;
+    border:2px solid transparent;
+    padding:5px 10px;
+    border-radius:7px;
+    background-color: transparent;
+}
+.skill-part{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   
+    gap: 75px;
+}
+.skills h3{
+    margin: 40px 0 ;
+}
+.skill-part img{
+    width: 200px;
+    height:auto;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+footer p{
+    color: lightgray;
+    font-family:"gameFont", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+footer a{
+    color: lightgray;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer{
+    border: 2px solid white;
+    border-radius: 25px 25px 0 0 ;
+    color: white;
+    font-family: "gameFont", sans-serif;
+}
+#project{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#project p{
+    font-family: "segeo ui light", sans-serif;
+}
+.project-item{
+    width: 45%;
+    flex: 1;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 2.5%;
+    padding: 15px;
+}
+.project-item img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+}
+.project-item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 0;
+}
+.project-item a{
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    cursor:  url(Ori-link.png), auto;
+}
